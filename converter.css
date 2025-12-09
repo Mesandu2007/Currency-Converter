@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+body{
+    display:flex;
+    align-items: center;
+    background-color:blue;
+    justify-content: center;
+    
+}
+.currency-converter{
+    max-width: 420px;
+    width: 100%;
+    padding:40px 30px 50px;
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+    color: #fff;
+}
+.currency-converter .converter-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.converter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 2px solid  white;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+.converter-form .form-group{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:15px;
+
+}
+.converter-form .form-label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.converter-form .form-input{
+    flex:1;
+    padding:10px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.3);
+    outline: none;
+    font-weight: 500;
+}
+.currency-select{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding:0 10px;
+    min-height:45px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.currency-select img{
+    width:25px;
+    height:25px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.currency-select .currency-dropdown{
+    outline:none;
+    border:none;
+    background: none;
+    color:black;
+    font-size: 16px;
+    font-weight:500;
+    padding:0 5px;
+    cursor: pointer;
+}
+.currency-converter .currency-dropdown option{
+    color:white;
+    font-weight: 500;
+}
+/* Swap icon */
+.swap-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.swap-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.submit-button {
+    width: 100%;
+    min-height: 52px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgba(95, 88, 88, 0.15);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+.submit-button.loading {
+    cursor: wait;
+    opacity: 0.8;
+}
+
+
+.exchange-rate-result {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    min-height: 20px;
+}
+.header h2{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 600px) {
+    .converter-form .form-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .currency-select {
+        width: 100%;
+    }
+
+    .swap-icon {
+        align-self: center;
+    }
+    .header h2{
+        font-size: 30px;
+        
+    }
+}
