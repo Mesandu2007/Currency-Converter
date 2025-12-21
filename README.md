@@ -14,9 +14,10 @@ Convert currencies instantly with real-time rates — beautifully designed for b
 ✔️ Built with reusable components
 
 📸 Preview
+<img width="1072" height="742" alt="image" src="https://github.com/user-attachments/assets/f4b7299a-73f5-485d-bcc1-da424699af2d" />
 
-<img width="1396" height="802" alt="image" src="https://github.com/user-attachments/assets/aa77dfc2-4a64-40e9-adf1-62b590acab39" />
-<img width="1248" height="773" alt="image" src="https://github.com/user-attachments/assets/db596220-c434-48b3-8770-3353af18195d" />
+
+
 
 
 
